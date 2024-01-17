@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .container {
@@ -23,7 +24,7 @@
 
 .survival__box {
     background-image: url(img/fon.png);
-    width: 1440px;
+    width: 1400px;
     margin: 0 auto;
     height: 780px;
 }
@@ -35,7 +36,7 @@
     align-items: center;
 }
 
-.header__logo {
+.logo {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -202,4 +203,56 @@
     text-decoration: none;
     width: 120px;
     background-color: var(--color-orange);
+}
+
+.footer {
+    background-image: url(img/footer.jpg);
+    height: 360px;
+}
+
+.footer__box {
+    padding: 150px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list {
+    display: flex;
+    gap: 85px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 27px;
+}
+
+.footer__list__link {
+    color: var(--color-white);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 60px; /* 260.87% */
+    text-decoration: none;
+}
+
+.header__sign,
+.header__button,
+.logo,
+.latest__form--button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__button:hover,
+.latest__form--button:hover {
+    background-color: var(--orange-light, #E39128);;
+}
+
+.header__sign:hover {
+    background-color: var( --color-orange);
+}
+
+.header__sign:active,
+.header__button:active,
+.latest__form--button:active {
+    background-color:  var(--orange-dark, #8F5613);
 }
