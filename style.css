@@ -8,6 +8,8 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 h1,h2,h3,h4 {
     font-family: 'Forum', serif;
@@ -63,7 +65,7 @@ body {
     line-height: 50px; /* 227.273% */
     letter-spacing: 2px;
 }
-.welcome,
+
 .welcome .container {
     height: 770px;
 }
@@ -102,14 +104,16 @@ body {
     height: 75px;
     border-radius: 10px;
 }
-
-.welcome__img {
+.welcome {
     position: relative;
-    right: -460px;
-    top: -448px;
+}
+.welcome__img {
+    position:  absolute;
+    right: 0px;
+    top: 3px;
 }
 
 .welcome__box {
-    position: relative;
+    position: absolute;
     z-index: 100;
 }
