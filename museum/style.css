@@ -118,7 +118,62 @@ body {
     z-index: 100;
 }
 
-.visiting__box {
+.visiting__wrapper {
+    margin-top: 75px;
+}
+
+.visiting__box--1,
+.visiting__box--2 {
     display: flex;
-    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 75px;
+}
+
+.visiting__title {
+    margin-top: 75px;
+    color: var(--color-gold);
+    font-family: Forum;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 90px; 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.line {
+    margin-top: 25px;
+    background-color: var(--color-red);
+    width: 1440px;
+    height: 3px;
+}
+
+.visiting__box--title {
+    margin-top: 25px;
+    color: #000;
+    font-family: Forum;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.visiting__box--line {
+    margin-top: 9px;
+    width: 300px;
+    height: 2px;
+    background-color: var(--color-red);
+}
+
+.visiting__box--text {
+    margin-top: 10px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.visiting__box-desc {
+    margin-top: 10px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
 }
