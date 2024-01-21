@@ -117,3 +117,8 @@ body {
     position: absolute;
     z-index: 100;
 }
+
+.visiting__box {
+    display: flex;
+    flex-wrap: wrap;
+}
