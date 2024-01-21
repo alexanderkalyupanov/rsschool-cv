@@ -157,11 +157,26 @@ body {
     text-transform: uppercase;
 }
 
+
+.visiting__box--item_wrap-1:hover {
+    animation: progressing 2s ease-in-out;
+}
 .visiting__box--line {
     margin-top: 9px;
     width: 300px;
     height: 2px;
     background-color: var(--color-red);
+}
+
+.visiting__box--line:after {
+    content: "";
+    width: 440px;
+    transition: 0.3s;
+}
+
+
+.visiting__box--line:hover {
+    animation: progressing 2s ease-in-out;
 }
 
 .visiting__box--text {
@@ -177,3 +192,4 @@ body {
     font-size: 18px;
     font-weight: 100;
 }
+
