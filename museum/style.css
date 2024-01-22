@@ -35,6 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 66px 0px 64px;
+    flex-wrap: wrap;
 }
 
 .nav__menu__logo-box {
@@ -54,6 +55,7 @@ body {
 
 .nav__menu--list {
     display: flex;
+    flex-wrap: wrap;
     gap: 78px;
 }
 
@@ -66,8 +68,11 @@ body {
     letter-spacing: 2px;
 }
 
-.welcome .container {
-    height: 770px;
+.welcome__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 .welcome__title {
     margin-top: 114px;
@@ -78,6 +83,7 @@ body {
     line-height: 90px; /* 112.5% */
     letter-spacing: 5px;
     text-transform: uppercase;
+
 }
 
 .welcome__text {
@@ -104,18 +110,21 @@ body {
     height: 75px;
     border-radius: 10px;
 }
-.welcome {
-    position: relative;
+
+.welcome__img--box {
+    width: 20%;
 }
-.welcome__img {
-    position:  absolute;
-    right: 0px;
-    top: 3px;
+
+.welcome__img--box img {
+    margin-left: -130px;
+    position: relative;
+    z-index: 1;
 }
 
 .welcome__box {
-    position: absolute;
-    z-index: 100;
+    max-width: 598px;
+    position: relative;
+    z-index: 50;
 }
 
 .visiting__wrapper {
@@ -157,27 +166,38 @@ body {
     text-transform: uppercase;
 }
 
-
-.visiting__box--item_wrap-1:hover {
-    animation: progressing 2s ease-in-out;
-}
 .visiting__box--line {
     margin-top: 9px;
-    width: 300px;
-    height: 2px;
     background-color: var(--color-red);
 }
 
-.visiting__box--line:after {
-    content: "";
+.visiting__box--item__wrap::after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 300px; /*задаём начальную ширину элемента (линии)*/
+    background-color: var(--color-red); /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out;
+}
+
+.visiting__box--item__wrap:hover:after,
+.visiting__box--item__wrap:focus:after {
     width: 440px;
-    transition: 0.3s;
 }
 
+/* .visiting__box--line:after {
+        display: block; 
+        /* content: ""; 
+        /* height: 2px; 
+        /* width: 300px; 
+        background-color: var(--color-red);
+        transition: width 0.4s ease-in-out; 
+} */ 
 
-.visiting__box--line:hover {
-    animation: progressing 2s ease-in-out;
-}
+/* .visiting__box--line:hover:after,
+.visiting__box--line:focus:after {
+    width: 440px;
+} */ 
 
 .visiting__box--text {
     margin-top: 10px;
