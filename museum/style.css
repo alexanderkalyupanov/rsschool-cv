@@ -15,7 +15,7 @@ h1,h2,h3,h4 {
     font-family: 'Forum', serif;
 }
 body {
-    width: 1920px;
+    min-width: 1920px;
 }
 
 .container {
@@ -70,8 +70,9 @@ body {
 
 .welcome__row {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
+   
 
 }
 .welcome__title {
@@ -136,6 +137,7 @@ body {
     display: flex;
     gap: 60px;
     margin-bottom: 75px;
+
 }
 
 .visiting__title {
