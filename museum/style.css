@@ -356,3 +356,137 @@ body {
     gap: 115px;
     margin-bottom: 75px;
 }
+
+.tickets {
+    background-color: var(--color-dark);
+}
+
+.tickets__title {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.tickets__wrap {
+    margin-top: 75px;
+    display: flex;
+    gap: 60px;
+}
+
+.tickets__box--input  {
+    display: flex;
+    flex-direction: column;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.tickets__text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.tickets__type {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cont {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: var(--color-dark);
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .cont input:checked ~ .checkmark {
+    background-color: var(--color-dark);
+  }
+  .cont input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .cont .checkmark:after {
+    top: 2.5px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.number {
+    width: 3em;
+    text-align: center;
+  }
+   
+.tickets__range-text {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.tickets__box--number--text {
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.65px;
+    margin-bottom: 50px;
+}
+
+.tickets__box-btn {
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.tickets__box--btn2,
+.tickets__box--btn1 {
+    width: 150px;
+    height: 50px;
+    border: 3px solid white;
+}
