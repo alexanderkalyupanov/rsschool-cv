@@ -613,14 +613,13 @@ body {
     align-items: flex-end;
 }
 
-.footer__social--item img {
-    width: 24px;
-    height: 24px;
-}
+
 
 .footer__social--item {
     border-radius: 50px;
     border: 1px solid #666;
     box-shadow: 0px 0px 0px 0px #666;
-    padding: 12px;
+    padding: 11px;
+    width: 48px;
+    height: 48px;
 }
