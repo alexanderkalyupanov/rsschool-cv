@@ -11,11 +11,12 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 h1,h2,h3,h4 {
     font-family: 'Forum', serif;
-}
-body {
-    min-width: 1920px;
 }
 
 .container {
@@ -384,9 +385,14 @@ body {
 .tickets__box--input  {
     display: flex;
     flex-direction: column;
+    margin-right: 200px;
 }
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.mb-11 {
+    margin-bottom: 11px;
 }
 
 .tickets__text {
@@ -401,8 +407,7 @@ body {
     font-family: Roboto;
     font-size: 28px;
     font-weight: 700;
-    padding-left: 50px;
-    margin-bottom: 11px;
+    padding-left: 25px;
 }
 
 .cont {
@@ -416,6 +421,11 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 50px;
+}
+
+.cont:last-child {
+    margin-bottom: 0px;
 }
 
 .cont input {
@@ -484,9 +494,10 @@ body {
     font-size: 22px;
     font-weight: 300;
     letter-spacing: 2px;
-    padding: 10px 40px;
+    padding: 12px 37px;
     background-color: white;
     text-decoration: none;
+    margin-left: -25px;
 }
 
 .tickets__box--btn2,
@@ -622,4 +633,32 @@ body {
     padding: 11px;
     width: 48px;
     height: 48px;
+}
+
+.footer__social--item:hover {
+    border: 1px solid var(--color-gold);
+    fill:  var(--color-gold);
+}
+
+.footer__social--item svg:hover path, 
+.footer__social--item svg:focus path{
+    fill: var(--color-gold);
+}
+
+.welcome_btn:hover,
+.tickets__box-btn:hover {
+    transition: all 0.3s;
+    background-color: var(--color-gold);
+}
+
+.nav__menu--link:hover,
+.nav__menu--link:active {
+    transition: all 0.3s;
+    color: var(--color-gold);
+}
+
+.footer__link:hover,
+.footer__link:active {
+    transition: all 0.3s;
+    color: var(--color-gold);
 }
