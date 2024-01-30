@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    color: var(--color-white);
 }
 
 .container {
@@ -49,7 +50,6 @@ body {
 }
 
 .header__nav--link {
-    color: var(--color-white);
     font-size: 20px;
     font-weight: 400;
     line-height: 50px; /* 250% */
@@ -71,9 +71,40 @@ body {
 }
 
 .header__razd {
-    color: var(--color-white);
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     line-height: 50px; /* 250% */
+}
+
+.header__box {
+    margin-top: 160px;
+    padding-left: 80px;
+}
+
+.header__box--title {
+    font-family: Merriweather;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 120px; /* 200% */
+    margin-bottom: 10px;
+}
+
+.header__box--text {
+    width: 470px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    margin-bottom: 25px;
+}
+
+.header__box--btn {
+    background-color: var(--color-gold);
+    color: var(--color-bg-dark);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    text-decoration: none;
+    padding: 16px 74px 15px 73px;
 }
