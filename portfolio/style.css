@@ -47,10 +47,16 @@ body {
 }
 
 .header__nav--link {
+    color: var(--color-white);
     font-size: 20px;
     font-weight: 400;
     line-height: 50px; /* 250% */
     text-decoration: none;
+}
+
+.header__nav--link:hover {
+    color: var(--color-gold);
+    transition: all 0.3s;
 }
 
 .tem {
@@ -353,4 +359,21 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.btn:hover,
+.price__item--btn:hover,
+.contacts__box--btn:hover
+ {
+    color: var(--color-white);
+    transition: all 0.3s;
+}
+
+.footer__social--img:hover {
+    fill: var(--color-gold);
+    transition: all 0.3s;
+}
+
+.header__nav--logo:hover {
+    fill: var(--color-gold);
 }
