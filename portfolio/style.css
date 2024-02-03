@@ -387,6 +387,11 @@ body {
     fill: var(--color-gold);
 }
 
+.portfolio__menu--1,
+.portfolio__menu--2 {
+    display: flex;
+}
+
 @media (max-width:769px) {
     .header__cont {
         background-image: url(img/back768.png);
@@ -444,5 +449,56 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .video__img {
+        padding: 0;
+        width: 768px;
+        height: 418px;
+    }
+    .video__play {
+        width: 64.62px;
+        height: 64.69px;
+        top: 40%;
+        left: 364px;
+    }
+    .price__list--box {
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-bottom: 80px;
+    }
+    .contacts__cont {
+        background-image: url("img/contacts-fon768.png");
+        width: 768px;
+        height: 600px;
+    }
+    .contacts__box {
+        align-items: center;
+    }
+    .contacts__box--title {
+        margin-top: 60px;
+        padding-left: 200px;
+        font-family: Merriweather;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .contacts__box--btn {
+        margin-left: 225px;
+    }
+    .footer__rs {
+        margin: 0;
+    }
+    .footer__cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .footer__copyright {
+        margin-bottom: 16px;
+    }
+    .footer__rs {
+        margin-bottom: 20px;
     }
 }
