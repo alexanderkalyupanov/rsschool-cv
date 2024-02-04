@@ -11,6 +11,14 @@ body {
     background-color: var(--color-bg-dark);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.open {
+    display: flex !important;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -137,6 +145,7 @@ body {
 }
 
 .skills__wrapper {
+    justify-content: center;
     padding: 0px 20px;
     display: flex;
     gap: 40px;
@@ -398,8 +407,81 @@ body {
         width: 768px;
         height: 590px;
     }
+    .header__wrap {
+        gap: 0px;
+    }
+  
+    .burger {
+        margin-top: 10px;
+        margin-right: 64px;
+        display: flex;
+        position: fixed;
+        z-index: 50;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 28px;
+    }
+    .burger span {
+        height: 2px;
+        width: 50px;
+        transform: scale(1);
+        background-color: var(--color-white);
+    }
+    .burger::before, .burger::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #FAF6F2;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before { top: 0 }
+    .burger::after { bottom: 0 }
+    
+    
+    /* Добавляем класс active для анимации иконки бургера */
+    .burger.active span { transform: scale(0) }
+    
+    .burger.active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+    
+    .burger.active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+    /* .header__nav--list {
+        position: absolute;
+        right: -660px;
+        top: 0;
+        width: 620px;
+        background-color: var(--color-bg-dark);
+        display: none;
+      } */
     .header__nav--list {
         display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 580px;
+        top: -15px;
+        right: 0;
+        gap: 15px;
+        z-index: 50;
+        overflow-y: auto;
+        padding-top: 134px;
+        background-color: var(--color-bg-dark);
+        animation: burgerAnimation 0.3s;
+    }
+    @keyframes burgerAnimation {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+    .header__nav--link {
+        display: block;
+        padding-left: 63px;
     }
     .header__box--title {
         width: 165px;
@@ -423,6 +505,7 @@ body {
     }
     .header__nav {
         padding-left: 60px;
+        padding-top: 20px;
     }
     .header__nav--change {
         margin-right: 134px;

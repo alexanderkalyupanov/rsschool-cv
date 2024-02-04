@@ -22,35 +22,39 @@
                 <div class="header__wrap">
                     <ul class="header__nav--list">
                         <li class="header__nav--item">
-                            <a href="#"  class="header__nav--link">
+                            <a href="#skills"  class="header__nav--link">
                                 Skills
                             </a>
                         </li>
                         <li class="header__nav--item">
-                            <a  href="#"  class="header__nav--link">
+                            <a  href="#portfolio"  class="header__nav--link">
                                 Portfolio
                             </a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#"  class="header__nav--link">
+                            <a href="#video"  class="header__nav--link">
                                 Video
                             </a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#" class="header__nav--link">
+                            <a href="#price" class="header__nav--link">
                                 Price
                             </a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#"  class="header__nav--link">
+                            <a href="#contacts"  class="header__nav--link">
                                 Contacts
                             </a>
                         </li>
                     </ul>
+                   
                     <div class="header__nav--change">
                         <a href="#" class="header__en tem">en</a>
                         <div class="header__razd">/</div>
                         <a href="#" class="header__ru tem">ru</a>
+                    </div>
+                    <div class="burger">
+                        <span></span>
                     </div>
                 </div>
             </nav>
@@ -64,7 +68,7 @@
         </div>
     </header>
     <main class="mai">
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container skills__cont">
                 <div class="skills__title--box title__box">
                     <div class="line"></div>
@@ -103,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container port_container">
                 <div class="portfolio__title--box title__box">
                     <div class="line"></div>
@@ -140,7 +144,7 @@
             </div>
             
         </section>
-        <section class="video">
+        <section class="video" id="video">
             <div class="container">
                 <div class="video__title--box title__box">
                     <div class="line"></div>
@@ -153,7 +157,7 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <div class="price__title--box title__box">
                     <div class="line"></div>
@@ -200,7 +204,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container contacts__cont">
                 <div class="contacts__box">
                     <h2 class="contacts__box--title">Contact me</h2>
@@ -239,5 +243,12 @@
             </div>
         </section>
     </main>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.header__nav--list').classList.toggle('open');
+        })
+
+    </script>
 </body>
 </html>
