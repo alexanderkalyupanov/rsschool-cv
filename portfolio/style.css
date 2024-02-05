@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.open {
+.active {
     display: flex !important;
 }
 

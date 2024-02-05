@@ -49,9 +49,9 @@
                     </ul>
                    
                     <div class="header__nav--change">
-                        <a href="#" class="header__en tem">en</a>
+                        <a href="" class="header__en tem">en</a>
                         <div class="header__razd">/</div>
-                        <a href="#" class="header__ru tem">ru</a>
+                        <a href="" class="header__ru tem">ru</a>
                     </div>
                     <div class="burger">
                         <span></span>
@@ -63,7 +63,7 @@
                 <p class="header__box--text">
                     Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
                 </p>
-                <a href="#" class="header__box--btn btn">Hire me</a>
+                <a href="" class="header__box--btn btn">Hire me</a>
             </div>
         </div>
     </header>
@@ -175,7 +175,7 @@
                             <li class="item--list">Readiness 2-3 weeks</li>
                             <li class="item--list">Make up, visage</li>
                         </ul>
-                        <a href="#" class="price__item--btn">Order shooting</a>
+                        <a href="" class="price__item--btn">Order shooting</a>
                     </div>
                     <div class="price__item">
                         <h3 class="price__item--title">Premium</h3>
@@ -187,7 +187,7 @@
                             <li class="item--list">Readiness 1-2 weeks</li>
                             <li class="item--list">Make up, visage</li>
                         </ul>
-                        <a href="#" class="price__item--btn">Order shooting</a>
+                        <a href="" class="price__item--btn">Order shooting</a>
                     </div>
                     <div class="price__item">
                         <h3 class="price__item--title">Gold</h3>
@@ -199,7 +199,7 @@
                             <li class="item--list">Readiness 1 week</li>
                             <li class="item--list">Make up, visage, hairstyle</li>
                         </ul>
-                        <a href="#" class="price__item--btn">Order shooting</a>
+                        <a href="" class="price__item--btn">Order shooting</a>
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
                     <input type="email" name="email" id="" placeholder=" E-mail" class="contacts__box--input1">
                     <input type="tel" name="tel" placeholder=" Phone" id="" class="contacts__box--input2">
                     <input type="text" name="text" placeholder=" Message" id="" class="contacts__box--input3">
-                    <a href="#" class="contacts__box--btn">Send message</a>
+                    <a href="" class="contacts__box--btn">Send message</a>
                 </div>
             </div>
         </section>
@@ -225,16 +225,16 @@
                      </div>
                      <p class="footer__rs">Rolling Scopes School</p>
                      <div class="footer__social">
-                        <a href="#" class="footer__social--item">
+                        <a href="" class="footer__social--item">
                             <img src="img/ins.svg" alt="">
                         </a>
-                        <a href="#" class="footer__social--item">
+                        <a href="" class="footer__social--item">
                             <img src="img/facebook.svg" alt="">
                         </a>
-                        <a href="#" class="footer__social--item">
+                        <a href="" class="footer__social--item">
                             <img src="img/tviter.svg" alt="">
                         </a>
-                        <a href="#" class="footer__social--item">
+                        <a href="" class="footer__social--item">
                             <img class="footer__social--img" src="img/linkdn.svg" alt="">
                         </a>
                      </div>
@@ -244,11 +244,34 @@
         </section>
     </main>
     <script>
-        document.querySelector('.burger').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.header__nav--list').classList.toggle('open');
+        const BurgerMenu = document.querySelector('.burger');
+        const NavList = document.querySelector(".header__nav--list")
+        if (BurgerMenu) {
+            BurgerMenu.addEventListener('click', function(e) {
+            BurgerMenu.classList.toggle('active');
+            NavList.classList.toggle('active');
+        });
+ 
+        }
+        NavList.querySelectorAll(".header__nav--link").forEach(link => {
+            link.addEventListener("click", () => {
+                BurgerMenu.classList.remove("active")
+                NavList.classList.remove("active")
+            })
         })
 
+        const anchors = document.querySelectorAll(`a[href*="#"]`);
+        anchors.forEach(anchor => {
+            anchor.addEventListener("click", event => {
+                event.preventDefault();
+
+                const blockID = anchor.getAttribute("href").substring(1);
+                document.getElementById(blockID).scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                })
+            })
+        })
     </script>
 </body>
 </html>
