@@ -25,10 +25,6 @@ body {
     min-height: 70px;
 }
 
-.nav {
-
-}
-
 .nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -59,4 +55,25 @@ body {
 .list-item_link:hover:after,
 .list-item_link:focus:after {
     width: 100%;
+}
+
+.main__box {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+.left-side {
+    border: 1px solid black;
+}
+
+.right-side {
+    border: 1px solid red;
+}
+
+.left-img {
+    width: 400px;
+}
+
+.side__info {
+    margin: 100px 65px 100px 65px;
 }
