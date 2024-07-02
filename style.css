@@ -1,11 +1,11 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -104,6 +104,10 @@ body {
     text-align: justify;
 }
 
+.about__me--content p {
+    margin-bottom: 30px;
+}
+
 .left-side {
     background-color: bisque;
 }
@@ -156,4 +160,16 @@ body {
 
 .skills__list--item {
     margin-bottom: 5px;
+}
+
+.education__info {
+    padding: 0 50px;
+}
+
+.education__title {
+    margin-bottom: 2px;
+}
+
+.education__term-study {
+    font-size: 14px;
 }
