@@ -58,14 +58,6 @@ body {
     grid-template-columns: 400px 1fr;
 }
 
-.left-side {
-    border: 1px solid black;
-}
-
-.right-side {
-    border: 1px solid red;
-}
-
 .left-img {
     width: 400px;
 }
@@ -163,7 +155,8 @@ body {
 }
 
 .education__info {
-    padding: 0 50px;
+    padding: 0px 50px;
+    margin-bottom: 30px;
 }
 
 .education__title {
@@ -172,4 +165,20 @@ body {
 
 .education__term-study {
     font-size: 14px;
+}
+
+.projects__info {
+    padding: 0 60px;
+    margin-bottom: 30px;
+}
+
+.projects__list--item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.projects__list--link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
