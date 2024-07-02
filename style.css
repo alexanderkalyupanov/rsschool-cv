@@ -84,6 +84,8 @@ body {
 
 .section__title h2 {
     font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .section__title::before {
@@ -100,4 +102,36 @@ body {
     font-family: "Montserrat", sans-serif;
     padding: 0 50px;
     text-align: justify;
+}
+
+.left-side {
+    background-color: bisque;
+}
+
+.contacts__img path {
+    fill: rgb(236, 180, 26);
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.title__left {
+    color: #fff;
+    border-bottom: 1px solid rgb(236, 180, 26);
 }
