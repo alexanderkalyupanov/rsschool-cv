@@ -188,3 +188,7 @@ body {
     color: black;
     cursor: pointer;
 }
+
+.pre {
+    margin-left: -250px;
+}
