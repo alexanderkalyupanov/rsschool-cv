@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -36,9 +40,11 @@ body {
     text-decoration: none;
     color: black;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.list-item_link:after {
+.list-item_link:after,
+.footer__link::after {
     display: block; 
     line-height: 1px;
     content: ""; 
@@ -49,7 +55,9 @@ body {
 }
 
 .list-item_link:hover:after,
-.list-item_link:focus:after {
+.list-item_link:focus:after,
+.footer__link:hover:after,
+.footer__link:focus:after {
     width: 100%;
 }
 
@@ -154,6 +162,7 @@ body {
 
 .skills__list {
     padding-left: 70px;
+    margin-bottom: 30px;
 }
 
 .skills__list--item {
@@ -191,4 +200,30 @@ body {
 
 .pre {
     margin-left: -250px;
+}
+
+.footer {
+    background-color: bisque;
+    min-height: 70px;
+}
+
+.footer__box {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer__item {
+    display: flex;
+    align-items: center;
+}
+
+.footer__link {
+    transition: 0.3s;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
