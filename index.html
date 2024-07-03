@@ -4,9 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="style.css"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a href="#about-me" class="list-item_link">About me</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#contacts" class="list-item_link">Contacts</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#skills" class="list-item_link">Skills</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#projects" class="list-item_link">Projects</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#education" class="list-item_link">Education</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#code-example" class="list-item_link">Code example</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#languages" class="list-item_link">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__box">
+                <div class="left-side">
+                    <div class="left-side__img">
+                        <img class="left-img" src="assets/img/my_photo.jpg" alt="my photo">
+                    </div>
+                    <section class="contacts__info" id="contacts">
+                        <div class="section__title title__left">
+                            <h2>Contacts</h2>
+                        </div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <img src="assets/icons/telegram.svg" alt="telegram logo" class="contacts__img" style="width: 35px; height: 35px;">
+                                <a href="https://t.me/alexander_qwe" target="_blank" class="contacts__link">@alexander_qwe</a>
+                            </li>
+                            <li class="contacts__item">
+                                <img src="assets/icons/phone.svg" alt="phone logo" class="contacts__img" style="width: 35px; height: 35px;">
+                                <a href="tel:+79191971503" target="_blank" class="contacts__link">+79191971503</a>
+                            </li>
+                            <li class="contacts__item">
+                                <img src="assets/icons/github.svg" alt="github logo" class="contacts__img" style="width: 35px; height: 35px;">
+                                <a href="https://github.com/alexanderkalyupanov" target="_blank" class="contacts__link">alexanderkalyupanov</a>
+                            </li>
+                            <li class="contacts__item">
+                                <img src="assets/icons/email.svg" alt="email logo"  class="contacts__img" style="width: 35px; height: 35px;">
+                                <a href="mailto:alexander.kalyupanov@mail.ru" target="_blank" class="contacts__link">alexander.kalyupanov@mail.ru</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="languages" id="languages">
+                        <div class="section__title title__left">
+                            <h2>Languages</h2>
+                        </div>
+                        <ul class="languages__list">
+                            <li class="languages__list--item">English</li>
+                            <p class="languages__level">A2</p>
+                            <li class="languages__list--item">Russian</li>
+                            <p class="languages__level">Native</p>
+                        </ul>
+                    </section>
+                    <section class="skills" id="skills">
+                        <div class="section__title title__left">
+                            <h2>Skills</h2>
+                        </div>
+                        <ul class="skills__list">
+                            <li class="skills__list--item">HTML5</li>
+                            <li class="skills__list--item">CSS3</li>
+                            <li class="skills__list--item">Git</li>
+                            <li class="skills__list--item">JavaScript</li>
+                            <li class="skills__list--item">Figma</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right-side">
+                    <section class="side__info">
+                        <h1 class="side__title">Alexander Kalyupanov</h1>
+                        <p>Front-End Developer</p>
+                    </section>
+                    <section class="about__me" id="about-me">
+                        <div class="section__title">
+                            <h2>About me</h2>
+                        </div>
+                        <div class="about__me--content">
+                            <p>I'm 18 years old and I'm in college studying to be a programmer. Since my childhood I have loved computers very much and having grown up, I decided to choose the profession of a programmer in the future. I decided to try to learn frontend on my own and I enjoyed it. I want to become a frontend developer and will strive to do so. It is something I enjoy doing. My strengths are responsibility, hard work, patience.  My hobbies are learning English, programming, sports, reading books and always learning something new.</p> 
+                        </div>
+                    </section>
+                    <section class="education" id="education">
+                        <div class="section__title">
+                            <h2>Education</h2>
+                        </div>
+                        <div class="education__info">
+                            <h3 class="education__title">Bryansk Polytechnical College</h3>
+                            <p class="education__term-study">Years of study: 2022-2026</p>
+                            <p class="education__specialty"><b>Specialty:</b> Programmer</p>
+                        </div>
+                    </section>
+                    <section class="projects" id="projects">
+                        <div class="section__title">
+                            <h2>Projects</h2>
+                        </div>
+                        <div class="projects__info">
+                            <ul class="projects__list">
+                                <li class="projects__list--item">
+                                    <a href="https://alexanderkalyupanov.github.io/frontendblok/" target="_blank" class="projects__list--link">Inferno</a>
+                                </li>
+                                <li class="projects__list--item">
+                                    <a href="https://alexanderkalyupanov.github.io/burgers/" target="_blank" class="projects__list--link">Burger House</a>
+                                </li>
+                                <li class="projects__list--item">
+                                    <a href="https://alexanderkalyupanov.github.io/createx/" target="_blank" class="projects__list--link">Createx</a>
+                                </li>
+                                <li class="projects__list--item">
+                                    <a href="https://alexanderkalyupanov.github.io/food-shops/" target="_blank" class="projects__list--link">FoodShop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="code-example" id="code-example">
+                        <div class="section__title">
+                            <h2>Code example</h2>
+                        </div>
+                        <div class="code-example__box">
+                            <pre class="pre">
+                                <code>
+                                    function evenOrOdd(number) {
+                                        if (number%2 == 0)  return "Even";
+                                        else {
+                                        return "Odd";
+                                        }
+                                    }
+                                </code>
+                            </pre>
+             
+                        </div>
+                    </section>
+                </div>
+            </div>
+           
+        </div>
+    
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__item">
+                    <img src="assets/icons/github.svg" alt="github logo" class="contacts__img" style="width: 50px; height: 50px;">
+                    <a href="https://github.com/alexanderkalyupanov" target="_blank" class="footer__link">alexanderkalyupanov</a>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__year">© 2024</p>
+                </div>
+                <div class="footer__item">
+                    <a href="https://rs.school/courses/javascript-ru" target="_blank" >
+                        <img src="assets/icons/rsschool-logo.svg" alt="rsschool logo" class="footer__logo" style="width: 70px; height: 70px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
