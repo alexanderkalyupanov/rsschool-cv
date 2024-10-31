@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -121,7 +129,6 @@ body {
 }
 
 .contacts__list {
-  display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
@@ -148,6 +155,14 @@ body {
 .title__left {
   color: #ffffffc7;
   border-bottom: 1px solid rgb(236, 180, 26);
+}
+
+.title__left:first-child {
+  margin-top: 30px;
+}
+
+.title__left:first-child {
+  margin-top: 30px;
 }
 
 .title__left:first-child {
