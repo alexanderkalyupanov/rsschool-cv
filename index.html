@@ -13,30 +13,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header">\
         <div class="container">
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="list-item">
-                        <a href="#about-me" class="list-item_link">About me</a>
+                        <a href="#about-meabout-me" class="list-item_link">About me</a>
                     </li>
                     <li class="list-item">
-                        <a href="#contacts" class="list-item_link">Contacts</a>
+                        <a href="#contactscontacts" class="list-item_link">Contacts</a>
                     </li>
                     <li class="list-item">
-                        <a href="#skills" class="list-item_link">Skills</a>
+                        <a href="#skillsskills" class="list-item_link">Skills</a>
                     </li>
                     <li class="list-item">
-                        <a href="#projects" class="list-item_link">Projects</a>
+                        <a href="#projectsprojects" class="list-item_link">Projects</a>
                     </li>
                     <li class="list-item">
-                        <a href="#education" class="list-item_link">Education</a>
+                        <a href="#educationeducation" class="list-item_link">Education</a>
                     </li>
                     <li class="list-item">
-                        <a href="#code-example" class="list-item_link">Code example</a>
+                        <a href="#code-examplecode-example" class="list-item_link">Code example</a>
                     </li>
                     <li class="list-item">
-                        <a href="#languages" class="list-item_link">Languages</a>
+                        <a href="#languageslanguages" class="list-item_link">Languages</a>
                     </li>
                 </ul>
             </nav>
@@ -55,34 +55,36 @@
                         </div>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <img src="assets/icons/telegram.svg" alt="telegram logo" class="contacts__img" style="width: 35px; height: 35px;">
+                                <img src="assets/icons/telegram.svg" alt="telegram logo" class="contacts__img">
                                 <a href="https://t.me/alexander_qwe" target="_blank" class="contacts__link">@alexander_qwe</a>
                             </li>
                             <li class="contacts__item">
-                                <img src="assets/icons/phone.svg" alt="phone logo" class="contacts__img" style="width: 35px; height: 35px;">
+                                <img src="assets/icons/phone.svg" alt="phone logo" class="contacts__img">
                                 <a href="tel:+79191971503" target="_blank" class="contacts__link">+79191971503</a>
                             </li>
                             <li class="contacts__item">
-                                <img src="assets/icons/github.svg" alt="github logo" class="contacts__img" style="width: 35px; height: 35px;">
+                                <img src="assets/icons/github.svg" alt="github logo" class="contacts__img">
                                 <a href="https://github.com/alexanderkalyupanov" target="_blank" class="contacts__link">alexanderkalyupanov</a>
                             </li>
                             <li class="contacts__item">
-                                <img src="assets/icons/email.svg" alt="email logo"  class="contacts__img" style="width: 35px; height: 35px;">
+                                <img src="assets/icons/email.svg" alt="email logo"  class="contacts__img">
                                 <a href="mailto:alexander.kalyupanov@mail.ru" target="_blank" class="contacts__link">alexander.kalyupanov@mail.ru</a>
                             </li>
                         </ul>
                     </section>
+                    <section class="languages" id="languages">
                     <section class="languages" id="languages">
                         <div class="section__title title__left">
                             <h2>Languages</h2>
                         </div>
                         <ul class="languages__list">
                             <li class="languages__list--item">English</li>
-                            <p class="languages__level">A2</p>
+                            <li><label class="languages__level">A2</label></li>
                             <li class="languages__list--item">Russian</li>
-                            <p class="languages__level">Native</p>
+                            <li><label class="languages__level">Native</label></li>
                         </ul>
                     </section>
+                    <section class="skills" id="skills">
                     <section class="skills" id="skills">
                         <div class="section__title title__left">
                             <h2>Skills</h2>
@@ -109,6 +111,7 @@
                             <p>I'm 18 years old and I'm in college studying to be a programmer. Since my childhood I have loved computers very much and having grown up, I decided to choose the profession of a programmer in the future. I decided to try to learn frontend on my own and I enjoyed it. I want to become a frontend developer and will strive to do so. It is something I enjoy doing. My strengths are responsibility, hard work, patience.  My hobbies are learning English, programming, sports, reading books and always learning something new.</p> 
                         </div>
                     </section>
+                    <section class="education" id="education">
                     <section class="education" id="education">
                         <div class="section__title">
                             <h2>Education</h2>
@@ -155,15 +158,48 @@
                                     }
                                 </code>
                             </pre>
+                        </div>
+                    </section>
+                    <section class="code-example" id="code-example">
+                        <div class="section__title">
+                            <h2>Code example</h2>
+                        </div>
+                        <div class="code-example__box">
+                            <pre class="pre">
+                                <code>
+                                    function evenOrOdd(number) {
+                                        if (number%2 == 0)  return "Even";
+                                        else {
+                                        return "Odd";
+                                        }
+                                    }
+                                </code>
+                            </pre>
              
                         </div>
                     </section>
                 </div>
             </div>
-           
         </div>
-    
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__item">
+                    <img src="assets/icons/github.svg" alt="github logo" class="contacts__img">
+                    <a href="https://github.com/alexanderkalyupanov" target="_blank" class="footer__link">alexanderkalyupanov</a>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__year">© 2024</p>
+                </div>
+                <div class="footer__item">
+                    <a href="https://rs.school/courses/javascript-ru" target="_blank" >
+                        <img src="assets/icons/rsschool-logo.svg" alt="rsschool logo" class="footer__logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <footer class="footer">
         <div class="container">
             <div class="footer__box">
@@ -184,4 +220,6 @@
     </footer>
 </body>
 </html>
+
+
 
