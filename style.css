@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -59,15 +55,6 @@ body {
   width: 0%;
   background-color: rgb(236, 180, 26);
   transition: width 0.4s ease-in-out;
-.list-item_link:after,
-.footer__link::after {
-    display: block; 
-    line-height: 1px;
-    content: ""; 
-    height: 2px; 
-    width: 0%; 
-    background-color: rgb(236, 180, 26); 
-    transition: width 0.4s ease-in-out;
 }
 
 .list-item_link:hover:after,
@@ -75,10 +62,6 @@ body {
 .footer__link:hover:after,
 .footer__link:focus:after {
   width: 100%;
-.list-item_link:focus:after,
-.footer__link:hover:after,
-.footer__link:focus:after {
-    width: 100%;
 }
 
 .main__box {
@@ -273,33 +256,3 @@ body {
   cursor: pointer;
 }
 
-
-.pre {
-    margin-left: -250px;
-}
-
-.footer {
-    background-color: bisque;
-    min-height: 70px;
-}
-
-.footer__box {
-    display: flex;
-    padding-top: 10px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.footer__item {
-    display: flex;
-    align-items: center;
-}
-
-.footer__link {
-    transition: 0.3s;
-    margin-left: 10px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
